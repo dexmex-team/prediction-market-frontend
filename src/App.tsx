@@ -15,6 +15,9 @@ import history from './routerHistory'
 
 
 const Predictions = lazy(() => import('./views/Predictions'))
+
+const Staking = lazy(() => import('./views/Staking'))
+
 const NotFound = lazy(() => import('./views/NotFound'))
 
 // This config is required for number formatting
@@ -39,7 +42,10 @@ const App: React.FC = () => {
             <Route path="/" exact>
               <Predictions />
             </Route>
-           
+
+            <Route path="/staking">
+              <Staking />
+            </Route>
           
             {/* 404 */}
             <Route component={NotFound} />

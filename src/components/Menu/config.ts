@@ -7,11 +7,15 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     icon: 'HomeIcon',
     href: '/',
   },
-
   {
-    label: t('Staking'),
+    label: t('Staking V1'),
     icon: 'GroupsIcon',
     href: 'https://dexmexswap.com/staking',
+  },
+  {
+    label: t('Staking V2'),
+    icon: 'GroupsIcon',
+    href: '/staking',
   },
   {
     label: t('Prediction V1'),

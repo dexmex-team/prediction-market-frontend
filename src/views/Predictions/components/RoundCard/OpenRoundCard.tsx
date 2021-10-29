@@ -64,10 +64,6 @@ const OpenRoundCard: React.FC<OpenRoundCardProps> = ({
     <div style={{ whiteSpace: 'nowrap' }}>{`${formatBnbv2(betAmount)} MATIC`}</div>,
     { placement: 'top' },
   )
-  
-
-  console.log('body')
-  console.log(isSettingPosition)
 
   const getHasEnteredPosition = () => {
     if (hasEnteredUp || hasEnteredDown) {
